@@ -34,7 +34,7 @@ const Index = () => {
             <span className="text-primary"> Server Hosting</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Launch your Minecraft server in seconds. Enjoy high performance, 24/7 support, and unbeatable prices.
+            Launch your Minecraft server in seconds. Enjoy high performance and unbeatable prices.
           </p>
           <div className="flex justify-center space-x-4 animate-fade-up" style={{ animationDelay: "0.2s" }}>
             <a
