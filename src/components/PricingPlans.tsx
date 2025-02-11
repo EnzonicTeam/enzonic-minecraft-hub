@@ -7,7 +7,7 @@ const plans = [
     price: "1.99",
     ram: "1GB",
     cpu: "i5 CPU",
-    features: ["Instant Setup", "24/7 Support", "DDoS Protection", "Control Panel"],
+    features: ["Instant Setup", "DDoS Protection", "Control Panel", "Cheapest Server Plan"],
     icon: Server,
     patreonLink: "https://www.patreon.com/checkout/enzonic_com?rid=25112263"
   },
@@ -16,7 +16,7 @@ const plans = [
     price: "2.99",
     ram: "4GB",
     cpu: "i5 CPU",
-    features: ["Instant Setup", "24/7 Support", "DDoS Protection", "Control Panel"],
+    features: ["Instant Setup", "DDoS Protection", "Control Panel", "Great for Small Servers"],
     icon: Cpu,
     patreonLink: "https://www.patreon.com/checkout/enzonic_com?rid=25112270"
   },
@@ -25,7 +25,7 @@ const plans = [
     price: "4.99",
     ram: "6GB",
     cpu: "i5 CPU",
-    features: ["Instant Setup", "24/7 Support", "DDoS Protection", "Control Panel"],
+    features: ["Instant Setup", "DDoS Protection", "Control Panel", "Perfect for Modpacks"],
     icon: Server,
     patreonLink: "https://www.patreon.com/checkout/enzonic_com?rid=25112277"
   },
@@ -34,7 +34,7 @@ const plans = [
     price: "5.99",
     ram: "8GB",
     cpu: "i5 CPU",
-    features: ["Instant Setup", "24/7 Support", "DDoS Protection", "Control Panel"],
+    features: ["Instant Setup", "DDoS Protection", "Control Panel", "Most Popular Choice"],
     icon: Cpu,
     popular: true,
     patreonLink: "https://www.patreon.com/checkout/enzonic_com?rid=25112280"
@@ -44,7 +44,7 @@ const plans = [
     price: "8.99",
     ram: "10GB",
     cpu: "i5 CPU",
-    features: ["Instant Setup", "24/7 Support", "DDoS Protection", "Control Panel"],
+    features: ["Instant Setup", "DDoS Protection", "Control Panel", "High-End Performance"],
     icon: Server,
     patreonLink: "https://www.patreon.com/checkout/enzonic_com?rid=25112287"
   },
@@ -53,7 +53,7 @@ const plans = [
     price: "10.99",
     ram: "12GB",
     cpu: "i5 CPU",
-    features: ["Instant Setup", "24/7 Support", "DDoS Protection", "Control Panel"],
+    features: ["Instant Setup", "DDoS Protection", "Control Panel", "Ultimate Power"],
     icon: Cpu,
     patreonLink: "https://www.patreon.com/checkout/enzonic_com?rid=25112289"
   }
@@ -66,8 +66,29 @@ const PricingPlans = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">Choose Your Server</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Select the perfect Minecraft server plan for your needs. All plans include premium features and 24/7 support.
+            Select the perfect Minecraft server plan for your needs. Starting at just $1.99/mo - the most affordable Minecraft hosting available!
           </p>
+          <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+            <img
+              src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
+              alt="High performance servers"
+              className="rounded-lg object-cover w-full h-32 hover:opacity-80 transition-opacity"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+              alt="Instant setup"
+              className="rounded-lg object-cover w-full h-32 hover:opacity-80 transition-opacity"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+              alt="Advanced control panel"
+              className="rounded-lg object-cover w-full h-32 hover:opacity-80 transition-opacity"
+            />
+            <div className="bg-primary/10 rounded-lg p-4 flex flex-col justify-center items-center">
+              <h3 className="text-primary font-bold text-xl mb-2">Starting at</h3>
+              <p className="text-3xl font-bold text-white">$1.99<span className="text-sm text-gray-400">/mo</span></p>
+            </div>
+          </div>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {plans.map((plan) => {
