@@ -1,4 +1,5 @@
-import { Server, Cpu } from "lucide-react";
+
+import { Server, Cpu, ArrowLeft } from "lucide-react";
 
 const plans = [
   {
@@ -62,6 +63,16 @@ const PricingPlans = () => {
   return (
     <div className="py-24 bg-dark" id="pricing">
       <div className="container mx-auto px-4">
+        <div className="flex items-center justify-start mb-8">
+          <a
+            href="https://enzonic.com"
+            className="inline-flex items-center text-primary hover:text-primary-hover transition-colors"
+          >
+            <ArrowLeft className="w-5 h-5 mr-2" />
+            Back to Enzonic.com
+          </a>
+        </div>
+        
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">Choose Your Server</h2>
           <p className="text-gray-400 max-w-2xl mx-auto mb-8">

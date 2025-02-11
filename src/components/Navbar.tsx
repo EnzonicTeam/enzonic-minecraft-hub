@@ -18,14 +18,6 @@ const Navbar = () => {
             >
               Panel <ExternalLink className="ml-1 w-4 h-4" />
             </a>
-            <a 
-              href="https://billing.enzonic.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center text-gray-300 hover:text-primary transition-colors"
-            >
-              Billing <ExternalLink className="ml-1 w-4 h-4" />
-            </a>
             <button className="bg-primary hover:bg-primary-hover text-dark font-semibold px-6 py-2 rounded-lg transition-colors">
               Get Started
             </button>
