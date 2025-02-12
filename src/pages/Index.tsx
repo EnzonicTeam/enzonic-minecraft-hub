@@ -27,13 +27,22 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="pt-32 pb-20 px-4">
-        <div className="container mx-auto text-center">
+      <div 
+        className="relative pt-32 pb-20 px-4 min-h-[80vh] flex items-center"
+        style={{
+          backgroundImage: "url('/lovable-uploads/97cd5678-bb02-4547-ae27-9ebe71a38c48.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-dark/80 via-dark/70 to-dark"></div>
+        <div className="container mx-auto text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-up">
             Premium Minecraft
             <span className="text-primary"> Server Hosting</span>
           </h1>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <p className="text-xl text-gray-200 max-w-2xl mx-auto mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             Launch your Minecraft server in seconds. Enjoy high performance and unbeatable prices.
           </p>
           <div className="flex justify-center space-x-4 animate-fade-up" style={{ animationDelay: "0.2s" }}>
