@@ -50,6 +50,11 @@ const Index = () => {
       {/* Features Section */}
       <div className="py-20 bg-dark-light">
         <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="inline-block bg-primary/20 text-primary font-semibold px-4 py-2 rounded-full mb-6">
+              Cheapest Hosting
+            </div>
+          </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {features.map((feature, index) => {
               const Icon = feature.icon;
